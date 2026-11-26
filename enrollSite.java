@@ -16,7 +16,8 @@ import java.util.Map;
 
 public class EnrollSite {
 
-    // Database settings (override with environment variables if you want)
+    
+    //Database settings (override with environment variables if you want)
     static final String DB_URL  = env("DB_URL",  "jdbc:mariadb://localhost:3306/offers");
     static final String DB_USER = env("DB_USER", "offeruser");
     static final String DB_PASS = env("DB_PASS", "offerpass");
