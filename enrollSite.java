@@ -34,7 +34,8 @@ public class EnrollSite {
     public static void main(String[] args) throws Exception {
         int port = args.length > 0 ? Integer.parseInt(args[0]) : 8080;
 
-        // Create the table if it does not exist yet
+        // Create the table 
+        //if it does not exist yet
         try (Connection c = db(); Statement s = c.createStatement()) {
             s.executeUpdate("""
                 CREATE TABLE IF NOT EXISTS enrollments (
