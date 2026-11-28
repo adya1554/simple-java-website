@@ -13,16 +13,16 @@ public class Main {
         server.createContext("/", exchange -> {
 
             String html = """
-                <html>
-                <head>
-                    <title>My Java Website</title>
-                </head>
-                <body>
-                    <h1>Welcome to My Java Website!</h1>
-                    <h2>Hosted on Ubuntu using Nginx</h2>
-                    <p>My first DevOps deployment!</p>
-                </body>
-                </html>
+                // <html>
+                // <head>
+                //     <title>My Java Website</title>
+                // </head>
+                // <body>
+                //     <h1>Welcome to My Java Website!</h1>
+                //     <h2>Hosted on Ubuntu using Nginx</h2>
+                //     <p>My first DevOps deployment!</p>
+                // </body>
+                // </html>
                 """;
 
             exchange.getResponseHeaders().set(
